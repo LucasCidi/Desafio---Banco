@@ -13,8 +13,10 @@ public class Banco {
 		this.nome = nome;
 	}
 
-	public List<Conta> getContas() {
-		return contas;
+	public void getContas() {
+		for(Conta c : contas) {
+			c.imprimirInfosComuns();
+		}
 	}
 
 	public void setContas(List<Conta> contas) {
